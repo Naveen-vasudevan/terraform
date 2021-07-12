@@ -30,7 +30,7 @@ phases:
       - cd "$CODEBUILD_SRC_DIR/manifest"
       - ls -lrt "$CODEBUILD_SRC_DIR/manifest"
       - terraform --version
-      - terraform init -input=false 
+      - terraform init  
       - terraform validate
       - terraform plan 
       - terraform apply -auto-approve  
