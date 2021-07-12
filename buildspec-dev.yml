@@ -18,7 +18,7 @@ phases:
       - tf_version=$TERRAFORM_VERSION
       - wget https://releases.hashicorp.com/terraform/1.0.2/terraform_1.0.2_linux_amd64.zip
       - unzip terraform_1.0.2_linux_amd64.zip
-      - mv terraform /usr/local/bin/
+      - mv terraform /usr/local/sbin/
   pre_build:
     on-failure: ABORT     
     commands:
